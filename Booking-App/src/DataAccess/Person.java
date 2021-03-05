@@ -1,6 +1,7 @@
 package DataAccess;
 
 import java.util.Scanner;
+import Presentation.*;
 
 public abstract class Person {
 
@@ -24,10 +25,17 @@ public abstract class Person {
 
         if (userInput == custLogin) {
             loggedIn = true;
+
+            CustomerMenu menu = new CustomerMenu();
+            menu.Display(loggedIn);
         }
 
         else if (userInput == empLogin) {
 
+            loggedIn = true;
+
+            EmployeeMenu menu = new EmployeeMenu();
+            menu.Display(loggedIn);
         }
 
         else {
