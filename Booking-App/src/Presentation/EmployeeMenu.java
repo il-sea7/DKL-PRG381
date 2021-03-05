@@ -21,6 +21,9 @@ public class EmployeeMenu {
             case 5:
                 loggedIn = false;
                 break;
+
+            default:
+                break;
             }
         }
     }

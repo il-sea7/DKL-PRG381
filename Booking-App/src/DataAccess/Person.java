@@ -1,6 +1,6 @@
 package DataAccess;
 
-import java.util.Scanner;
+import java.util.*;
 import Presentation.*;
 
 public abstract class Person {
@@ -13,7 +13,7 @@ public abstract class Person {
         this.phone = phone;
     }
 
-    public void login() {
+    public static void login() {
 
         String custLogin = "cust";
         String empLogin = "emp";
@@ -23,14 +23,14 @@ public abstract class Person {
         System.out.println("Enter username");
         String userInput = input.nextLine();
 
-        if (userInput == custLogin) {
+        if (userInput.equals(custLogin)) {
             loggedIn = true;
 
             CustomerMenu menu = new CustomerMenu();
             menu.Display(loggedIn);
         }
 
-        else if (userInput == empLogin) {
+        else if (userInput.equals(empLogin)) {
 
             loggedIn = true;
 
