@@ -11,7 +11,6 @@ public class Customer extends Person {
         return name;
     }
 
-<<<<<<< HEAD
     public String getSurname() {
         return surname;
     }
@@ -19,8 +18,5 @@ public class Customer extends Person {
     public String getPhone() {
         return phone;
     }
-=======
-    
->>>>>>> 81464696e8b206be372b92f75135306f9e771b35
 
 }
