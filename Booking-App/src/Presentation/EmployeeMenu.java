@@ -22,7 +22,7 @@ public class EmployeeMenu{
             switch (Integer.parseInt(option)) {
                 case 1:      
                     break;
-
+                                
                 case 5:
                     loggedIn  = false;
                     break;
