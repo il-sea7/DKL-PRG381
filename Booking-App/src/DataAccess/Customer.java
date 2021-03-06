@@ -2,8 +2,8 @@ package DataAccess;
 
 public class Customer extends Person {
 
-    public Customer(String name, String surname, String phone) {
-        super(name, surname, phone);
+    Customer(String id, String name, String surname, String phone) {
+        super(id, name, surname, phone);
         // TODO Auto-generated constructor stub
     }
 

@@ -5,9 +5,13 @@ import Presentation.*;
 
 public abstract class Person {
 
-    String name, surname, phone;
+    String id;
+    String name;
+    String surname;
+    String phone;
 
-    Person(String name, String surname, String phone) {
+    Person(String id, String name, String surname, String phone) {
+        this.id = id;
         this.name = name;
         this.surname = surname;
         this.phone = phone;
