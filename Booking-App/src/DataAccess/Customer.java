@@ -11,6 +11,12 @@ public class Customer extends Person {
         return name;
     }
 
-    
+    public String getSurname() {
+        return surname;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
 
 }
